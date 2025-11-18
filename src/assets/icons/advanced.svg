@@ -1,0 +1,8 @@
+<!-- src/assets/icons/advanced.svg -->
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="24" fill="#E5E7EB"/>
+  <path d="M24 14L30 20L24 26L18 20L24 14Z" stroke="#6B7280" stroke-width="2"/>
+  <path d="M18 24L24 30L30 24" stroke="#6B7280" stroke-width="2"/>
+  <circle cx="24" cy="24" r="6" stroke="#6B7280" stroke-width="2"/>
+  <path d="M24 18V30M18 24H30" stroke="#6B7280" stroke-width="2"/>
+</svg>
