@@ -6,7 +6,7 @@ import Logo from "../assets/img/bull-removebg-preview.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-gray-800 text-white">
+    <footer className="bg-black/90   border-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
@@ -28,16 +28,20 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-yellow-400 mb-4">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li className="flex items-center gap-3"><HiPhone /> +234 901 234 5678</li>
-              <li className="flex items-center gap-3"><HiEnvelope /> support@vireluxacademy.com</li>
-              <li className="flex items-center gap-3"><HiMapPin /> Lagos • Abuja • PH</li>
+              <li><a href="" className="flex items-center gap-3 hover:text-yellow-400"><HiPhone /> +234 901 234 5678</a></li>
+              <li ><a href=""className="flex items-center gap-3 hover:text-yellow-400"><HiEnvelope /> support@vireluxforexacademy.com</a></li>
+              <li className="flex items-center gap-3 hover:text-yellow-400"><HiMapPin /> Lagos • Abuja • PH</li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-yellow-400 mb-4">Join Now</h4>
-            <a href="#enroll" className="inline-flex items-center gap-2 bg-yellow-500 text-black font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
-              Enroll Today <BsArrowUpRightCircleFill />
+            <a
+              href="#enroll" 
+              className="group mt-10 inline-flex items-center gap-3 bg-white text-black px-4 py-4 rounded-xl  font-medium hover:bg-yellow-400 hover:text-white transition-all"
+            >
+              Register  Now
+              <BsArrowUpRightCircleFill  className="text-xl transform transition-transform duration-300 group-hover:rotate-45" />
             </a>
           </div>
         </div>

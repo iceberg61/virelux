@@ -1,6 +1,6 @@
 import React from "react";
 import { HiPlay, HiOutlineBookOpen, HiOutlineVideoCamera, HiOutlineDocumentText, HiOutlineMicrophone, HiCheckCircle } from "react-icons/hi2";
-import { BsArrowUpRightCircleFill } from "react-icons/bs";
+
 
 import videoImage from "../assets/img/in-equity-16-image.jpg"; 
 
@@ -124,15 +124,6 @@ export default function EducationSection() {
                 </li>
               ))}
             </ul>
-
-            <a
-              href="#enroll" 
-              className="group mt-10 inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-yellow-500 hover:text-black transition-all"
-            >
-              Start Your Free Training Now
-              <BsArrowUpRightCircleFill className="text-2xl transform transition-transform duration-300 group-hover:rotate-45" />
-            </a>
-
           </div>
 
         </div>

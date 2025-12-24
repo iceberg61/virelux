@@ -43,7 +43,7 @@ export default function ProductSection() {
   ];
 
   return (
-    <section className="w-full py-20 bg-yellow-500">
+    <section className="w-full py-20 bg-yellow-400">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
@@ -56,9 +56,9 @@ export default function ProductSection() {
           {products.map((p) => (
             <div
               key={p.title}
-              className="bg-linear-to-b from-yellow-50 to-white rounded-2xl p-6 flex flex-col items-start shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+              className="bg-linear-to-b from-yellow-50 to-white rounded-xl p-6 flex flex-col items-start shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100"
             >
-              {/* Image Icon (replaces text circle) */}
+              {/* Image Icon  */}
               <div
                 className={`w-12 h-12 rounded-full flex items-center justify-center ${p.bgColor} mb-4 p-2`}
               >
