@@ -8,6 +8,7 @@ import Testimonials from "./components/TestimonialsSection";
 import CTA from "./components/HeroCTA";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import ChristmasEffect from "./components/ChristmasEffect";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ function App() {
           path="/"
           element={
             <>
+            <ChristmasEffect />
               <Hero />
               <ProductSection />
               <EducationSection />
