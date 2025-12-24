@@ -64,7 +64,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4 w-full lg:w-1/2">
 
             <div className="flex items-center gap-2 p-1.5 bg-white/5 rounded-xl md:w-[80%] w-full" >
-              <span className="bg-red-600/70 text-xs font-medium px-2 py-1 rounded-md">
+              <span className="bg-red-600/70 text-xs font-medium px-2 py-1 rounded-md ">
                 🎄 Live
               </span>
               <p className="text-gray-400 text-xs">
