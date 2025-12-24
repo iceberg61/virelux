@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-
-// import hat from "../assets/img/hat.png";
+import hat from "../assets/img/hat.png";
 import Slide1 from "../assets/img/in-equity-slide-1.png";
 import Bull from "../assets/img/in-equity-decor-1.svg";
 import MarketTicker from "./MarketTicker";
 
-//  Christmas toggle
+// 🎄 Christmas toggle
 const isDecember = new Date().getMonth() === 11;
 
 export default function Hero() {
@@ -22,7 +21,7 @@ export default function Hero() {
   return (
     <main className="relative bg-black/90 text-white font-sans overflow-hidden pt-24 sm:pt-28">
 
-      {/*  TOP CHRISTMAS LIGHTS */}
+      {/* 🎄 TOP CHRISTMAS LIGHTS */}
       {isDecember && (
         <div className="christmas-lights">
           {Array.from({ length: 18 }).map((_, i) => (
@@ -31,7 +30,7 @@ export default function Hero() {
         </div>
       )}
 
-      {/*  SOFT SNOW */}
+      {/* ❄️ SOFT SNOW */}
       {init && isDecember && (
         <Particles
           id="tsparticles"
@@ -64,7 +63,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="flex flex-col gap-4 w-full lg:w-1/2">
 
-            <div className="flex items-center gap-2 p-1.5 bg-white/5 rounded-xl w-[80%]">
+            <div className="flex items-center gap-2 p-1.5 bg-white/5 rounded-xl md:w-[80%] w-full" >
               <span className="bg-red-600/70 text-xs font-medium px-2 py-1 rounded-md">
                 🎄 Live
               </span>
@@ -74,33 +73,23 @@ export default function Hero() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold leading-tight">
+              Unlock Forex Mastery at{" "}
               <span className="relative inline-block">
-                Unlock
+                <span className="relative z-10">Virelux</span>
 
-                {/* {isDecember && (
+                {/*  SANTA HAT */}
+                {isDecember && (
                   <img
                     src={hat}
                     alt="Santa Hat"
-                    className="
-                      absolute
-                      -top-6 left-2
-                      w-10 rotate-[-20deg]
-                      pointer-events-none opacity-90
-
-                      sm:-top-8 sm:left-4 sm:w-12
-                      lg:-top-12 lg:left-0 lg:w-16
-                    "
+                    className="hidden md:block absolute -top-7.5 -left-[-170px] w-20 rotate-25"
                   />
-                )} */}
-              </span>{" "}
-              Forex Mastery at{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10">Virelux</span>
+                )}
+
                 <span className="block h-1 w-full bg-red-500 mt-1"></span>
               </span>{" "}
               Forex Academy
             </h1>
-
 
             {/*  UPDATED PARAGRAPH */}
             <p className="text-sm sm:text-lg md:text-xl text-gray-400">
